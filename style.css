@@ -1,0 +1,172 @@
+/* 1. General Setup */
+:root {
+    --primary-teal: #1D4E56;
+    /* The color from your screenshot */
+    --accent-teal: #2A6F7A;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* 2. Navigation */
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--primary-teal);
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--primary-teal);
+    font-weight: 600;
+}
+
+/* 3. Hero Section (The Main Area) */
+.hero-section {
+    display: flex;
+    /* Creates a side-by-side layout */
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    /* Takes up most of the screen height */
+    padding: 50px 10%;
+    gap: 50px;
+    background-color: #f4f8f9;
+    /* Very light teal/grey background */
+}
+
+.content-wrapper {
+    flex: 1;
+    /* Takes up half the space */
+    max-width: 600px;
+}
+
+/* Typography Styling */
+.tagline {
+    display: block;
+    text-transform: uppercase;
+    color: var(--primary-teal);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: var(--primary-teal);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.description-box {
+    border-left: 4px solid var(--primary-teal);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+/* Button Styling */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-teal);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-teal);
+}
+
+/* 4. Image/Right Side */
+.image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.placeholder-image {
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-teal);
+    border-radius: 20px;
+    opacity: 0.2;
+    /* Making it lighter just for the placeholder */
+}
+
+/* 5. Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-teal);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        /* Stack vertically on phones */
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .description-box {
+        border-left: none;
+        border-top: 4px solid var(--primary-teal);
+        padding-top: 20px;
+        padding-left: 0;
+    }
+}
+
+/* Add this to the bottom of your CSS file */
+
+/* 1. Control the Logo Size */
+.logo-img {
+    height: 50px;
+    /* Adjust this number to make it bigger/smaller */
+    width: auto;
+    /* Keeps the aspect ratio so it doesn't squish */
+}
+
+/* 2. Control the Main Hero Image */
+.hero-img {
+    max-width: 100%;
+    /* Ensures it never goes wider than its container */
+    border-radius: 20px;
+    /* Gives it rounded corners like your design */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+}
