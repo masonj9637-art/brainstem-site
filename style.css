@@ -170,3 +170,85 @@ footer a {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     /* Adds a subtle shadow */
 }
+
+/* --- NEW NAVIGATION STYLES --- */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.nav-links a.active-page {
+    color: var(--primary-teal);
+    border-bottom: 2px solid var(--primary-teal);
+}
+
+.contact-btn {
+    background-color: var(--primary-teal);
+    color: white !important;
+    /* Force white text */
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: var(--accent-teal);
+}
+
+/* --- BLOG PAGE STYLES --- */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Centers the content */
+    padding: 60px 20px;
+    min-height: 60vh;
+}
+
+.page-title {
+    text-align: center;
+    color: var(--primary-teal);
+    margin-bottom: 60px;
+}
+
+.blog-post {
+    background: white;
+    margin-bottom: 40px;
+}
+
+.post-date {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.blog-post h2 {
+    color: var(--primary-teal);
+    margin-top: 0;
+}
+
+.post-image {
+    width: 100%;
+    /* Forces image to fit the text width */
+    height: auto;
+    /* Keeps the aspect ratio so it doesn't squish */
+    border-radius: 10px;
+    /* Rounds the corners to look nice */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 40px 0;
+}
